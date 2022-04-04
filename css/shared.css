@@ -1,0 +1,128 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.login-form {
+    width: 15em;
+    margin: auto;
+}
+
+.login-form input[type="text"],
+.login-form input[type="password"] {
+    border: 1px solid #ccc;
+    padding: 0.2rem 0.5rem;
+}
+
+.login-form input[type="text"]:focus,
+.login-form input[type="password"]:focus {
+    background: #d8f3df;
+    border-color: #2ddf5c;
+}
+
+.login-form input[type="submit"] {
+    background-color: #0e4f1f;
+    color: white;
+    border: 1.5px solid #0e4f1f;
+    padding: 0.5rem;
+    border-radius: 8px;
+    font-size: 13px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.login-form input[type="submit"]:hover,
+.login-form input[type="submit"]:active {
+    background: white;
+    color: #0e4f1f;
+}
+
+
+.login-form input:invalid:focus {
+    border: 1px solid red;
+    background: rgb(250, 172, 172);
+}
+
+.login-form label {
+    font-weight: bold;
+}
+
+.login-form label,
+.login-form input {
+    display: block;
+    margin-top: 25px;
+    width: 100%;
+}
+
+.main-header {
+    background-color: #2ddf5c;
+    padding: 8px 16px;
+    width: 100%;
+}
+
+.main-header>div {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.main-header__brand {
+    color: #0e4f1f;
+    text-decoration: none;
+    font-size: 22px;
+}
+
+.main-login__title {
+    text-align: center;
+    color: #ff5454;
+    padding-top: 20px;
+}
+
+.main-nav {
+    display: inline-block;
+    width: calc(100% - 76px);
+    text-align: right;
+    vertical-align: middle;
+}
+
+.main-nav__item {
+    display: inline-block;
+}
+
+.main-nav__item a {
+    text-decoration: none;
+    margin: 0 16px;
+    color: #0e4f1f;
+    font-weight: bold;
+}
+
+.main-nav__item a:hover,
+.main-nav__item a:active {
+    color: white;
+    font-weight: bold;
+    border-bottom: 5px solid white;
+}
+
+.main-nav__item_logout a {
+    color: white;
+    background-color: #ff1b68;
+    padding: 8px 16px;
+    border-radius: 8px;
+}
+
+.main-nav__item_logout a:hover {
+    border-bottom: none;
+    color: #ff1b68;
+    background-color: white;
+    border-bottom: none;
+}
+
+.main-nav__item_mensajes::before {
+    content: "✉";
+}
+
+.main-nav__items {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- estilos y código JS externos -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;1,300;1,400&display=swap" rel="stylesheet">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.10/js/all.js" integrity="sha384-slN8GvtUJGnv6ca26v8EzVaR9DC58QEwsIk9q1QXdCU8Yu8ck/tL/5szYlBbqmS+" crossorigin="anonymous"></script>
+
+    <!-- nuestros estilos -->
+    <link rel="stylesheet" href="css/shared.css">
+    <link rel="stylesheet" href="css/index.css">
+</head>
+
+<body>
+
+    <header class="main-header">
+        <div>
+            <a class="main-header__brand" href="index.html">Banco</a>
+        </div>
+
+        <nav class="main-nav">
+            <ul class="main-nav__items">
+                <li class="main-nav__item">
+                    <a href="clientes.html">Clientes</a>
+                </li>
+                <li class="main-nav__item">
+                    <a href="gestores.html">Gestores</a>
+                </li>
+                <li class="main-nav__item">
+                    <a class="main-nav__item_mensajes" href="mensajes.html">Mensajes</a>
+                </li>
+                <li class="main-nav__item main-nav__item_logout">
+                    <a href="logout.html">
+                        <i class="fas fa-sign-out-alt"></i>
+                        Logout
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main-main">
+
+        <h1 class="main-login__title">
+            Iniciar sesión
+        </h1>
+
+        <form class="login-form">
+
+            <!-- caja de texto Usuario -->
+            <label for="nombre">Nombre</label>
+            <input type="text" name="nombre" id="nombre">
+
+            <!-- caja de texto Password -->
+            <label for="password">Password</label>
+            <input type="password" name="password" id="password">
+
+            <input type="submit" value="Entrar">
+        </form>
+
+
+
+    </main>
+
+
+    </body>
+
+</html>
